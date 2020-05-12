@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css?family=Barlow:100i,800i|Quicksand&display=swap');
+*{margin:0; padding:0; box-sizing: border-box; }
+
+html{ background-image: url(../img/polaroid.png);}
+
+body
+{
+font: 20px quicksand;
+}
+
+/* Header */
+
+nav
+{
+margin:0;
+padding:0;
+background-color:#730202;
+}
+nav h1 a
+{
+	float:left;
+	text-decoration:none;
+	color:#D0D3D9;
+	font: 28px Barlow 800i;
+}
+nav ul
+{
+text-align:right;
+position: sticky;
+top: 0;
+}
+
+nav ul li a, nav ul li
+{ 
+display: inline-block;
+}
+
+nav ul li a
+{
+box-sizing:border-box;
+text-align:center;
+padding-top: 5px;
+margin-top:10px;
+margin-right:10px;
+font-size: 28px;
+color:#D0D3D9 ;
+font-family: quicksand;
+text-decoration: none;
+background-color: #730202;
+/*border-radius:10%;*/
+transition:background-color 500ms, color 500ms;
+}
+
+nav ul li.active a
+{
+box-sizing:border-box;
+text-align:center;
+padding-top: 5px;
+margin-top:10px;
+margin-right:10px;
+margin-bottom:5px;
+font-size: 28px;
+color: #730202;
+font-family: quicksand;
+text-decoration: none;
+background-color:  #D0D3D9 ;
+border-radius:10%;
+}
+
+nav ul li a:hover
+{
+background-color: #D0D3D9 ;
+color:#730202;
+}
+
+
+/*Form*/
+main
+{
+display:flex;
+justify-content: center; 
+flex-direction: column;
+align-items: center;
+}
+section.bkg
+{
+background-color:rgba(208,211,217,75%);
+margin-top:10px;
+margin-bottom:26px;
+padding:15px;
+display:flex;
+justify-content: center; 
+flex-direction: column;
+align-items: center;
+}
+
+
+}
+section.format form div
+{
+padding:3px;
+
+}
+
+section.format form div input
+{
+font-family:quicksand;
+font-size: 14px;
+margin:7px;
+}
+
+section.format form div textarea
+{
+width:343px;
+margin:3px;
+font-family:quicksand;
+font-size: 14px;	
+margin:5px;
+}
+
+optgroup
+{
+font: 18px quicksand;
+width:172px;
+}
+
+select
+{
+font: 18px quicksand;
+width:172px;
+}
+
+input.size
+{
+width:175px;	
+}
+
+/* Paragraphs and Headers */
+
+main section.keypoints
+{
+width:650px;
+padding:10px;	
+}	
+
+main section.keypoints h1
+{
+	text-align:center;
+	font-size:30px;
+}
+
+/*images*/
+
+img.circle_img
+{
+	width:500px;
+border-radius:50%;	
+margin:10px;
+}
+
+img.small_img
+{
+	width:100px;
+}
+
+img.small_floated_img
+{
+	width:750px;
+	border-radius:25%;
+
+}
+img.img_coll
+{
+	width:150px;
+	border-radius:25%;
+margin:20px;
+}
+
+h1.font
+{
+font: 67px Barlow 800i;
+color:#004A09;
+border-bottom: 3px double #004A09;
+margin:5px;
+}
+
+label.design
+{
+font: 27px quicksand;
+text-align: center;
+margin: 15px;
+border-bottom: 3px double #004A09;
+}
+select.crust
+{
+width:175px;
+margin:15px;
+	
+}

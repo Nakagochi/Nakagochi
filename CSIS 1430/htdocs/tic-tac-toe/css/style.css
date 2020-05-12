@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto:100i,300,400&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    background-image: url("../img/bush.png")
+}
+
+div.body {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    user-select: none;
+}
+
+nav ul {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: #FFC9F5;
+}
+
+nav ul li a,
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 5px 30px;
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-size: 40px;
+    color: #69B3AF;
+    border-radius: 20px;
+    transition: color .75s, background-color .5s;
+}
+
+nav ul li a:hover {
+    color: #FFC9F5;
+    background-color: #69B3AF;
+}
+
+div.gameName,
+div#playerTurn {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    user-select: none;
+}
+
+
+/* TIC TAC TOE BOARD */
+
+.hide {
+    display: none;
+}
+
+main {
+    width: 533px;
+    overflow: hidden;
+    background-color: rgba(176, 255, 251, 0.664);
+    user-select: none;
+}
+
+main.board div[id^="row-"] div {
+    cursor: not-allowed;
+    display: block;
+}
+
+div[id^="row-"] {
+    clear: both;
+}
+
+div[id^="row-"] div {
+    border: 2px solid #B3346D;
+    height: 175px;
+    width: 175px;
+    float: left;
+    cursor: pointer;
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-size: 160px;
+    text-align: center;
+}
+
+div#row-1 div {
+    border-top: none;
+}
+
+div#row-3 div {
+    border-bottom: none;
+}
+
+div[id^="row-"] div:first-child {
+    border-left: none;
+}
+
+div[id^="row-"] div:last-child {
+    border-right: none;
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(176, 255, 251, 0.9);
+}
+
+
+/*Left Section*/
+
+section#left {
+    margin: 20;
+    border: 2px #69B3AF solid;
+    overflow: hidden;
+    float: left;
+    clear: both;
+    width: 175px;
+}
+
+form {
+    margin-top: 30px;
+}
+
+form label {
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+button#submit {
+    width: 150px;
+    height: 75px;
+    margin: 5px 12px;
+}
+
+input[id^="player"] {
+    height: 25px;
+    width: 160px;
+    font-size: 18px;
+    margin: 5px;
+}
+
+input#player1 {
+    margin-bottom: 25px;
+}
+
+
+/*Right Section*/
+
+section#right {
+    margin: 20;
+    border: 2px #69B3AF solid;
+    overflow: hidden;
+    float: right;
+    clear: both;
+    width: 175px;
+}
+
+section#right div p,
+section#left p {
+    font-size: 23px;
+    user-select: none;
+}
+
+p.par {
+    text-decoration: double underline;
+}
+
+div.winnings {
+    height: 50px;
+    margin-top: 20px;
+}
+
+p[id^=win] {
+    font-size: 25px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.winP {
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+button.winP {
+    width: 170px;
+    height: 50px;
+}
+
+button {
+    background: rgb(255, 201, 245);
+    background: linear-gradient(50deg, rgba(255, 201, 245, 1) 0%, rgba(202, 231, 243, 1) 45%, rgba(202, 231, 243, 1) 60%, rgba(255, 201, 245, 1) 100%);
+}
+
+div#playerTurn {
+    background-color: rgba(176, 255, 251, 0.9);
+    border: 2px #69B3AF solid;
+    padding: 10px;
+    width: 55%;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+
+/*
+69B3AF Dark Blue
+FFC9F5 Pink
+B0FFFB Light Blue
+*/

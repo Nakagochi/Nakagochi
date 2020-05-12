@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Spartan:500&display=swap');
+
+*{margin:0; padding:0; box-sizing: border-box; overflow:hidden;}
+
+html
+{
+	background-image: url(../img/prism.png);
+}
+
+nav ul
+{
+	text-align:right;
+	  position: sticky;
+  top: 0;
+ background-color:#69497C;
+}
+
+nav ul li a, nav ul li
+{ 
+	display: inline-block;
+}
+
+
+nav ul li a
+{
+	box-sizing:border-box;
+	
+	text-align:center;
+	padding-top: 5px;
+	margin-top:10px;
+	margin-right:10px;
+	font-size: 35px;
+	color: #E3CBFF;
+	font-family: 'Spartan';
+	text-decoration: none;
+ 	background-color: #69497C;
+	border-radius:10%;
+	transition:background-color 500ms, color 500ms, transform 2s ;
+	
+
+}
+
+
+nav ul li.active a
+{
+	box-sizing:border-box;
+	
+	text-align:center;
+	padding-top: 5px;
+	margin-top:10px;
+	margin-right:10px;
+	font-size: 35px;
+	color: #69497C;
+	font-family: 'Spartan';
+	text-decoration: none;
+ 	background-color:  #E3CBFF;
+	border-radius:10%;
+	transition:background-color 500ms, color 500ms, transform 2s ;
+	
+}
+nav ul li a:hover
+{
+	background-color:  #E3CBFF;
+	color:#69497C;
+	
+	animation: rotation 1000ms infinite linear ;
+	
+}
+
+@keyframes rotation
+{
+	25%{
+		transform: rotate(7deg);
+	}
+	50%{ 
+	transform: rotate(0deg);
+	}
+	75%{
+		transform: rotate(-3deg);
+	}
+	100%{transform: rotate(0deg);}
+}
+ h1.text
+{
+	margin-top:15px;
+	text-align:right;
+	color:#69DED6;
+	font-family: 'Shadows into Light';
+	font-size:53px;
+}
