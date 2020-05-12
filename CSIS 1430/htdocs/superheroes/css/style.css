@@ -1,0 +1,56 @@
+div.format
+{
+	margin: 0px auto;
+	border-top: 10px solid blue;
+	border-bottom: 10px solid blue;
+	border-left: 5px dashed blue;
+	border-right: 5px dashed blue;
+	width: 650px;
+	text-align: center;
+	background-color: #e1f4f3;
+
+	
+}
+
+div.spider
+{
+	color:#2B3784;
+	background-color:#DF1F2D; 
+	width:250px; 
+	margin: 15px auto; 
+	border-radius:50px;
+	font: 16px Comic Sans MS, sans-serif;
+}
+
+div.ironman
+{
+	color:#AA0505;
+	background-color:#FBCA03; 
+	width:250px; 
+	margin: 15px auto; 
+	border-radius:50px;
+	font: 16px Comic Sans MS, sans-serif;
+}
+		
+		
+div.thor
+{
+	color:#2C3034;
+	background-color:#FADF7F; 
+	width:250px; 
+	margin: 15px auto; 
+	border-radius:50px;
+	font: 16px Comic Sans MS, sans-serif;
+}
+
+span.footnote
+{
+	color:rgb(255, 51, 255);
+	font: 8px Comic Sans MS, sans-serif;
+}
+
+span.dates
+{
+	background-color: rgba(153, 255, 102, .75);
+	border-radius: 10px;
+}

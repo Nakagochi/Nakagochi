@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Theme The Band</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div CLASS="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Tysen</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a id="home-page-nav-thing" href="#myPage"><span
+                                class="glyphicon glyphicon-home"></span>HOME</a></li>
+                    <li><a href="#band"><span class="glyphicon glyphicon-music"></span>MUSIC</a></li>
+                    <li><a href="#tour"><span class="glyphicon glyphicon-sunglasses"></span>TOUR</a></li>
+                    <li><a href="#contact"><span class="glyphicon glyphicon-education"></span>CONTACT</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span
+                                class="glyphicon glyphicon-option-horizontal"></span>MORE
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><span class="glyphicon glyphicon-usd"></span>Merchandise</a></li>
+                            <li><a href="#map"><span class="glyphicon glyphicon-road"></span>Map</a></li>
+                            <li><a href="#media"><span class="glyphicon glyphicon-globe"></span>Media</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/tysen-grad.jpg" alt="Tysen at Highschool Graduation." width="1200" height="700">
+                <div class="carousel-caption">
+                    <h3>Graduation</h3>
+                    <p>It was a good time and opened the book of my life.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/mtn-lake.jpg" alt="A lake overlooking a mountain." width="1200" height="700">
+                <div class="carousel-caption ">
+                    <h3>Life</h3>
+                    <p>They try to prep you in school but really its a free-for-all.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="img/tysen-laugh.jpg" alt="Tysen is dying of laughter." width="1200" height="700">
+                <div class="carousel-caption">
+                    <h3>ME</h3>
+                    <p>I'm not a robot, I laugh too. Ha. Ha. Ha. See?</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div id="band" class="container text-center">
+        <h3>THE MUSIC</h3>
+        <p><em>The music I love!</em></p>
+        <p>I don't know about you but, I love music. It keeps the days going, the body moving and gives everything life. I'm not a diehard fan but I do know what I enjoy.</p>
+        <p class="quote"><em>"I think music in itself is healing. It’s an explosive expression of humanity. It’s
+                something we are all touched by. No matter what culture you’re from, everyone loves music."</em></p>
+        <p class="quote">Billy Joel</p>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Blink-182</strong></p><br>
+                <a href="#demo" data-toggle="collapse" onclick="colapse(1)">
+                    <img src="img/blink-sqr.jpg" class="img-circle person" alt="Blink-182 Band Name">
+                </a>
+                <div id="demo" class="collapse">
+                    <p><em>Misery</em></p>
+                    <p><em>All The Small Things</em></p>
+                    <p><em>The Rock Show</em></p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <p class="text-center"><strong>ROCK</strong></p><br>
+                <a href="#demo2" data-toggle="collapse" onclick="colapse(2)">
+                    <img src="img/rock-sqr.jpg" class="img-circle person" alt="Rock Concert">
+                </a>
+                <div id="demo2" class="collapse">
+                    <p><em>ThunderStuck</em> AC/DC</p>
+                    <p><em>You're Gonna Go Far, Kid</em> The Offspring</p>
+                    <p><em>American Pie</em> Don McLean</p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <p class="text-center"><strong>Queen</strong></p><br>
+                <a href="#demo3" data-toggle="collapse" onclick="colapse(3)">
+                    <img src="img/queen.jpg" class="img-circle person" alt="Queen Band Logo">
+                </a>
+                <div id="demo3" class="collapse">
+                    <p><em>Don't Stop Me Now</em></p>
+                    <p><em>Bohemian Rhapsody</em></p>
+                    <p><em>Fat Bottom Girls</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-1">
+        <div id="tour" class="container">
+            <h3 class="text-center">TOUR ME</h3>
+            <p class="text-center">Just a few of my favoirte things.<br> I'm not that crazy.</p>
+            <ul class="list-group">
+                <li class="list-group-item">Bowling <span class="badge">KABOOM STRIKE!</span></li>
+                <li class="list-group-item">Cars <span class="badge">VROOM VROOOM</span></li>
+                <li class="list-group-item">Movies<span class="badge"> ROLL CREDITS</span></li>
+            </ul>
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="img/slt-temple-sqr2.jpg" alt="Paris">
+                        <p><strong>My Home</strong></p>
+                        <p>Yes. It's Utah.</p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Know More!</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="img/videogames-sqr.jpg" alt="New York">
+                        <p><strong>What I want?</strong></p>
+                        <p>More Games!</p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal1">Know More!</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="img/food.jpeg" alt="San Francisco">
+                        <p><strong>Never Enough</strong></p>
+                        <p>Fooooooooooood!!!</p>
+                        <button class="btn" data-toggle="modal" data-target="#myModal2">Know More!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4><span class="glyphicon glyphicon-lock"></span> UTAH</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Here in Utah there is a lot of things to do. We have plenty of hikes to go on. Nature is the best place to be when you visit here. It is always fun to learn about this state. Like how the movie Sandlot was filmed here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn  btn-dark btn-lg btn-block pull-left" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-remove"></span> EXIT
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4><span class="glyphicon glyphicon-lock"></span> VIDEOGAMES</h4>
+                </div>
+                <div class="modal-body">
+                    <p>I love video games as much as the next person. I find so much joy in playing them and beating the challenges that they bring. A few of my favorite games: Legend of Zelda, Pokémon, Call of Duty, Minecraft, and others. Since I was young,
+                        I have always wanted to become a video game developer. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn  btn-dark btn-lg btn-block pull-left" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-remove"></span> EXIT
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4><span class="glyphicon glyphicon-lock"></span> COOKING</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Food is the best thing on this world. There is nothing to argue against that. I have so much fun eating good food and making food. It is a skill I think everyone should have in the world. If find making food calming and fun and I think
+                        it is a hobby more people should do.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn  btn-dark btn-lg btn-block pull-left" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-remove"></span> EXIT
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact" class="container">
+        <h3 class="text-center">Contact</h3>
+        <p class="text-center"><em>I would love to hear from you!</em></p>
+        <div class="row test">
+            <div class="col-md-4">
+                <p>Want to share what you like?</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span>Salt Lake City, UT, USA</p>
+                <p><span class="glyphicon glyphicon-phone"></span>Phone: (801)739-5978</p>
+                <p><span class="glyphicon glyphicon-envelope"></span>Email: christensentysen@gmail.com</p>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit" onclick="window.location.href='../index.html';">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="text-center">More About Me!?</h3>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Bowling</a></li>
+            <li><a data-toggle="tab" href="#menu1">School</a></li>
+            <li><a data-toggle="tab" href="#menu2">Food</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h2>Bowling is Cool</h2>
+                <p>I am a local bowler that has won many awards on the city and state levels. My current average is 170 pins.
+                </p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h2>Graduation and Onward</h2>
+                <p>I graduated from Taylorsville Highschool with a 3.7 GPA and am currently as student at Salt Lake Community College. I have a plan to transfer up to the University of Utah when I am done here.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h2>Never Enough Things To Say.</h2>
+                <p>My all-time favorite food is...Hmmmm...Hard to pick one. I have a favorite candy. It is Pop Rocks.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96824.18963870755!2d-112.04562073279835!3d40.67934648931803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528cddfa3588b3%3A0xf57b74998d78ace5!2sWest%20Valley%20City%2C%20UT!5e0!3m2!1sen!2sus!4v1588310055931!5m2!1sen!2sus"
+        width="600" height="750" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    <footer class="text-center">
+        <div id="media" class="container">
+            <div class="row ">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2 ">
+                    <a href="https://www.facebook.com/tysen.christensen" target="_blank"><img class="img-thumbnail social" src="img/icon/facebook.png"></a>
+                </div>
+                <div class="col-sm-2 ">
+                    <a href="https://twitter.com/Nakagochi" target="_blank"><img class="img-thumbnail social" src="img/icon/twitter.png"></a>
+                </div>
+
+                <div class="col-sm-2  ">
+                    <a href="https://www.instagram.com/Naka_gochi/?hl=en" target="_blank"><img class="img-thumbnail social" src="img/icon/instagram.png"></a>
+                </div>
+                <div class="col-sm-2 ">
+                    <a href="https://www.linkedin.com/in/christensentysennakagochi/" target="_blank"><img class="img-thumbnail social" src="img/icon/linkedin.png"></a>
+                </div>
+            </div>
+        </div>
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br><br>
+        <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>
+        <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+    </footer>
+
+</body>
+
+</html>

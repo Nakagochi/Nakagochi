@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title></title>
+</head>
+
+<body>
+    <audio id="lottoPing"> 
+        <source src="js/audio/lottoSoundMP3.mp3" type="audio/mp3">
+        <source src="js/audio/lottoSoundOOG.ogg" type="audio/oog">
+    </audio>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <h1>Lottery Game</h1>
+
+        </header>
+        <section class="main">
+            <div class="number">
+                <p>Please select the amount of lottery numbers you would like between 1 and 15.</p>
+                <form>
+                    <input value="1" id="lotto" type="number" max="15" min="1">
+                </form>
+            </div>
+            <div class="header">
+                <h2>Your numbers</h2>
+            </div>
+            <div id="changed" class="lotto-numbers-default">
+                <p id="num">Your lottery numbers will appear here when you click the button below!</p>
+            </div>
+        </section>
+        <section>
+            <button id="lottoButton" onclick="printLotto()">Get A Number!!</button>
+            <div id="contL" class="lotList">
+                <h2>Your previous Lottery Numbers</h2>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
