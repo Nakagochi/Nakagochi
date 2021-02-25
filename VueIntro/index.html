@@ -19,21 +19,31 @@
     <div class="product-display">
       <div class="product-container">
         <div class="product-image">
-          <a :href="url"><img :src="img" :alt="desc"></a>
+          <a :href="url"><img :src="image" :alt="desc" :class="[inStock ?   '':'out-of-stock-img']"></a>
         </div>
         <div class="product-info">
-          <h1>{{ product }}</h1>
+          <h1>{{ title }}</h1>
           <p>{{ desc }}</p>
-          <h3 v-show="onSale">WE ARE ON SALE!</h3>
-          <p v-if="inventory >= 5">In Stock!</p>
-          <p v-else-if="inventory < 5 && inventory > 0">Almost Sold Out</p>
+          <h3 v-show="sale">WE ARE ON SALE!</h3>
+          <p v-if="inStock">In Stock!</p>
+          <!-- <p v-else-if="inventory < 5 && inventory > 0">Almost Sold Out</p> -->
           <p v-else>Out of Stock!</p>
           <ul>
             <li v-for="detail in details">{{ detail }}</li>
           </ul>
-          <div v-for="variant of variants" :key="variant.id"  @mouseover="updateImage(variant.image)">{{ variant.color }}</div>
-          <button class="button" v-on:click="addToCart" :disabled="inventory < 1">Add to Cart</button>
-          <button class="button" v-on:click="removeFromCart" >Add to Cart</button>
+
+          <div 
+          v-for="(variant, index) of variants" 
+          :key="variant.id" 
+           @mouseover="updateVariant(index)"
+           class="color-circle"
+           :style="{backgroundColor:variant.color}"></div>
+
+          <div style="display:inline-block; margin-left:10px;">
+            <button class="button" v-on:click="addToCart" :disabled="!inStock" :class="{ disabledButton: !inStock}">Add </button>
+            <button class="button" v-on:click="removeFromCart" >Remove</button>
+          </div>
+        
           <br>
           <div v-for="size of sizes" style="display:inline-block; margin:15px;"><div v-if="size.inStock"> {{ size.size }} </div></div>
         </div>
